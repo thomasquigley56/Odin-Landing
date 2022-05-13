@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+    font-family: sans-serif;
 }
 
 .header,
@@ -12,8 +13,8 @@ body {
 .three,
 .four,
 .footer {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .header,
@@ -22,22 +23,25 @@ body {
     padding-bottom: 16px;
 }
 
+.header,
+.one,
+.footer {
+    background-color: #1f2937;
+    color: white;
+}
+
 .header {
     flex: 0 0 100px;
-    background-color: hotpink;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: white;
 }
 
 .footer {
     flex: 0 0 100px;
-    background-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
 }
 
 .hlinks {
@@ -51,13 +55,15 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
 }
 
 .hlogo {
     flex: 1;
     display: flex;
     justify-content: flex-start;
+    color: #f9faf8;
+    font-size: 24px;
+    font-weight: Bolder;
 }
 
 .one,
@@ -72,7 +78,6 @@ a {
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    background-color: hotpink;
 }
 
 .oneinfo {
@@ -86,12 +91,25 @@ a {
 
 .oneinfo h1 {
     margin-top: 0;
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8
+}
+
+a,
+.onetext {
+    font-size: 18px;
+    color: #e5e7eb;
+
 }
 
 .oneinfo button {
-    background-color: teal;
+    background-color: #3882f6;
     color: white;
-    width: 70px;
+    width: 100px;
+    font-size: 18px;
+    padding: 8px;
+    border: none;
 }
 
 .one img {
@@ -100,18 +118,26 @@ a {
 }
 
 .two {
-    background-color: greenyellow;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 32px;
     padding: 32px;
+    background-color: white;
+}
+
+.two h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: bolder;
 }
 
 .twocards {
     display: flex;
     justify-content: center;
     gap: 32px;
+    font-size: 18px;
 }
 
 .item {
@@ -125,13 +151,14 @@ a {
 .item img {
     width: 147px;
     height: auto;
-    border: solid royalblue 3px;
+    border: solid #3882f6 3px;
 }
 
 .three {
-    background-color: white;
     justify-content: center;
     align-items: center;
+    background-color: #e5e7eb;
+    color: #1f2937
 }
 
 .threeItem {
@@ -150,10 +177,11 @@ a {
 
 .threeQuotee {
     align-self: flex-end;
+    font-weight: bolder;
+    font-size: 24px;
 }
 
 .four {
-    background-color: red;
     justify-content: center;
     align-items: center;
 }
@@ -164,28 +192,34 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: white;
-    background-color: teal;
     gap: 32px;
+    background-color: #3882f6;
+    color: white;
 }
 
 .fourInfo h2 {
-    color: white;
     margin: 0;
+    font-size: 24px;
+    font-weight: bolder;
 }
 
 .fourStack {
     display: flex;
     justify-content: space-between;
+    font-size: 18px;
 }
 
 .fourStack button{
-    width: 75px;
+    width: 100px;
+    background-color: #3882f6;
+    border: solid 2px white;
     color: white;
-    background-color: teal;
-    border: solid 3px white;
+    font-size: 18px;
+    padding: 8px;
 }
 
-.fourStack div {
-    color:white;
+button,
+.fourInfo,
+.twocards img {
+    border-radius: 12px;
 }
