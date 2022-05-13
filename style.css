@@ -6,17 +6,38 @@ body {
     margin: 0;
 }
 
+.header,
+.one,
+.two,
+.three,
+.four,
+.footer {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.header,
+.footer {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
 .header {
     flex: 0 0 100px;
     background-color: hotpink;
     display: flex;
     align-items: center;
-    padding: 16px;
+    justify-content: space-between;
+    color: white;
 }
 
 .footer {
     flex: 0 0 100px;
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 .hlinks {
@@ -24,14 +45,19 @@ body {
     padding: 0;
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .hlogo {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .one,
@@ -44,7 +70,7 @@ body {
 
 .one {
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 16px;
     background-color: hotpink;
 }
@@ -74,13 +100,92 @@ body {
 }
 
 .two {
-    background-color: greenyellow
+    background-color: greenyellow;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 32px;
+}
+
+.twocards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 150px;
+}
+
+.item img {
+    width: 147px;
+    height: auto;
+    border: solid royalblue 3px;
 }
 
 .three {
     background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.threeItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: 500px;
+}
+
+.threeQuote {
+    font-size: 36px;
+}
+
+.threeQuotee {
+    align-self: flex-end;
 }
 
 .four {
     background-color: red;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourInfo {
+    flex:1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    background-color: teal;
+    gap: 32px;
+}
+
+.fourInfo h2 {
+    color: white;
+    margin: 0;
+}
+
+.fourStack {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fourStack button{
+    width: 75px;
+    color: white;
+    background-color: teal;
+    border: solid 3px white;
+}
+
+.fourStack div {
+    color:white;
 }
