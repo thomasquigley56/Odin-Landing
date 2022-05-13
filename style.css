@@ -1,0 +1,86 @@
+body {
+    height: 1912px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.header {
+    flex: 0 0 100px;
+    background-color: hotpink;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.footer {
+    flex: 0 0 100px;
+    background-color: blue;
+}
+
+.hlinks {
+    list-style-type: none;
+    padding: 0;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.hlogo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.one,
+.two,
+.three,
+.four {
+    display: flex;
+    flex: 1;
+}
+
+.one {
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-color: hotpink;
+}
+
+.oneinfo {
+    flex: 0 0 400px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    height: 266.875px;
+    justify-content: space-between;
+}
+
+.oneinfo h1 {
+    margin-top: 0;
+}
+
+.oneinfo button {
+    background-color: teal;
+    color: white;
+    width: 70px;
+}
+
+.one img {
+    width: 400px;
+    height: auto;
+}
+
+.two {
+    background-color: greenyellow
+}
+
+.three {
+    background-color: white;
+}
+
+.four {
+    background-color: red;
+}
